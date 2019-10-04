@@ -39,13 +39,13 @@ class Title extends Component{
         let OutPut = null;
         if (this.state.IsInput) {
             OutPut=(
-                <div className="Title">
+                <div className="Title  w-50">
                     <input type="text" className="form-control" onBlur={(event)=>this.blurhendelar(event)} onKeyPress={(event)=>this.keyhender(event)} onChange={(event)=>this.changeHendelar(event) } value={this.state.title}/>
                 </div>
             )
         }else{
             OutPut=(
-            <div className="d-flex Title">
+            <div className="d-flex Title w-50">
             <h1 className="display-4 text-center" onClick={()=>this.ClickHendelar()}>{this.state.title}</h1>
                <span onClick={()=>this.ClickHendelar()} className="ml-auto span">
                <i className="fas fa-pencil-alt"></i>
@@ -54,7 +54,7 @@ class Title extends Component{
             )
         }
         return(
-            <div className=" w-50 mx-auto">
+            <div className=" mx-auto">
             {OutPut}
             </div>
         )

@@ -43,23 +43,23 @@ class Controller extends Component {
         if (this.state.start && !this.state.reset) {
             output = (
                 <div className="mt-5 ">
-                    <button onClick={this.clickHendelar} className="btn btn-primary btn-lg ml-5 px-5">start</button>
+                    <button onClick={this.clickHendelar} className="btn btn-success text-uppercase btn-lg ml-5 px-5">start</button>
                 </div>
             )
         }
         else if (!this.state.start && !this.state.reset) {
             output = (
                 <div className="mt-5 ">
-                    <button onClick={this.clickPause} className="btn btn-primary btn-lg ml-5 px-5">pause</button>
-                    <button onClick={this.lapHendelar} className="btn btn-primary btn-lg ml-5 px-5">lap</button>
+                    <button onClick={this.clickPause} className="btn btn-warning text-uppercase btn-lg ml-5 px-5">pause</button>
+                    <button onClick={this.lapHendelar} className="btn btn-info  text-uppercase btn-lg ml-5 px-5">lap</button>
                 </div>
             )
         }
         else if (!this.state.pause && this.state.lap) {
             output = (
                 <div className="mt-5  ">
-                    <button onClick={this.clickHendelar}className="btn btn-primary btn-lg ml-5 px-5">Start</button>
-                    <button onClick={this.resetHendelar}className="btn btn-primary btn-lg ml-5 px-5">Reset</button>
+                    <button onClick={this.clickHendelar}className="btn btn-success text-uppercase  btn-lg ml-5 px-5">Start</button>
+                    <button onClick={this.resetHendelar}className="btn btn-danger text-uppercase btn-lg ml-5 px-5">Reset</button>
                 </div>
             )
         }
